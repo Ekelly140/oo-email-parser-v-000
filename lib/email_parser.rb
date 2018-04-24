@@ -13,6 +13,6 @@ class EmailParser
   def parse
     @emails.split(" ").collect do |value| 
       value.split(",")
-    end.flatten
+    end.flatten.uniq
   end 
 end 
